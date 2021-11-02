@@ -8,12 +8,12 @@ app.use("/", (req, res) => {
 
 // route our app
 
-app.use(function (err, req, res, next) {
-    // if (!err.code) {
-    //     err.message = "server error";
-    // }
-    res.status(err.code || 500).send(`${err.code || 500} | ${err.message}`);
-});
+// app.use(function (err, req, res, next) {
+//     // if (!err.code) {
+//     //     err.message = "server error";
+//     // }
+//     res.status(err.code || 500).send(`${err.code || 500} | ${err.message}`);
+// });
 
 app.listen(port, function () {
     console.log("app started");
